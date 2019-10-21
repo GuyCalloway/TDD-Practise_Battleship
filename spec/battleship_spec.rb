@@ -7,7 +7,7 @@ describe "battle ship" do
         [0,0,0,0,0,0],
         [0,0,0,0,0,0],
         [0,0,0,0,0,0]]
-        expect(damage_or_sunk(board, attacks)).to eq({'sunk' => 0, 'damaged' => 0, 'not_touched' => 1, 'points' => 0})
+        expect(damage_or_sunk(board, attacks)).to eq({'sunk' => 0, 'damaged' => 0, 'not_touched' => 1, 'points' => -1})
     end
 
     it "takes board and single attack command and registers attack" do
@@ -34,7 +34,7 @@ describe "battle ship" do
         [0,0,0,0,0,0],
         [0,0,0,0,0,0],
         [1,1,0,0,0,0]]
-        expect(damage_or_sunk(board, attacks)).to eq({'sunk' => 2, 'damaged' => 0, 'not_touched' => 0, 'points' => 2})
+        expect(damage_or_sunk(board, attacks)).to eq({'sunk' => 1, 'damaged' => 0, 'not_touched' => 0, 'points' => 1})
     end
 end
 
