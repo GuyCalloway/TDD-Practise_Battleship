@@ -20,7 +20,7 @@ describe "battle ship" do
     end
 
     it "takes board and registers multiple attack commands" do
-        attacks = [[1, 1]]
+        attacks = [[1, 1], [2, 0]]
         board = [[0,0,0,0,0,0],
         [0,0,0,0,0,0],
         [0,0,0,0,0,0],
